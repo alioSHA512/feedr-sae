@@ -1,0 +1,15 @@
+name: feedr
+version: 1
+
+libraries:
+- name: "django"
+  version: "1.4"
+
+cron:
+- url: /formobile/refresh
+  schedule: every 5 mins
+
+handlers:
+- urls: /static
+  static_dir: static
+
